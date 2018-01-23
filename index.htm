@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://Hilee.cc/ -->
+<html dir="ltr" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hilee</title>
+	
+	<meta name="description" content="hilee.">
+	<meta name="keywords" content="Hilee">
+	<meta name="author" content="Hi Lee">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" href="https://hilee.cc/apple-touch-icon.png">
+	<link rel="Shortcut Icon" href="https://jonphillips.ca/favicon.ico" type="image/x-icon">
+	<script src="./js/jquery.min.js"></script><script type="text/javascript" src="./js/is"></script>
+	<link rel="stylesheet" href="./js/style.css" type="text/css" media="screen">
+</head>	
+<body>
+
+<main class="container">
+	<section class="content">
+		<h1>Hi Lee</h1>
+		<p id="desc"></p>
+		<a href="mailto:grey@gmail.com" title="Email Hilee">Contact</a>
+	</section>
+</main>
+
+<script>
+var showText = function (target, message, index, interval) {    
+	if (index < message.length) { 
+		$(target).append(message[index++]); 
+		setTimeout(function () { showText(target, message, index, interval); }, interval); 
+	} 
+}
+$(function () { 
+	showText("#desc", "Yes, I am 【海里】", 0, 100);
+}); 
+</script>
+	
+</body></html>
